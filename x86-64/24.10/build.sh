@@ -45,6 +45,7 @@ PACKAGES="$PACKAGES luci-app-wol"
 PACKAGES="$PACKAGES luci-app-openvpn-server"
 PACKAGES="$PACKAGES luci-app-syncdial"
 #PACKAGES="$PACKAGES luci-theme-material"
+PACKAGES="$PACKAGES luci-app-adbyby-plus"
 # 增加几个必备组件 方便用户安装iStore
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
