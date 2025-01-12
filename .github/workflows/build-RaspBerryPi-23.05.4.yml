@@ -41,7 +41,7 @@ jobs:
         run: |
           chmod +x ${{ github.workspace }}/raspberrypi/23.05.4/build.sh
 
-      - name: Build raspberrypi ImmortalWrt 24.10
+      - name: Build raspberrypi ImmortalWrt 23.05.4
         run: |
           profiles="${{ github.event.inputs.profile }}"
           if [ "$profiles" = "rpi" ]; then
@@ -70,7 +70,6 @@ jobs:
               --user root \
               -v "${{ github.workspace }}/bin:/home/build/immortalwrt/bin" \
               -v "${{ github.workspace }}/files:/home/build/immortalwrt/files" \
-              -v "${{ github.workspace }}/raspberrypi/imm.config:/home/build/immortalwrt/.config" \
               -v "${{ github.workspace }}/raspberrypi/23.05.4/build.sh:/home/build/openwrt/build.sh" \
               -e PROFILE=$profile \
               -e INCLUDE_DOCKER=$include_docker \
